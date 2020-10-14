@@ -61,4 +61,14 @@ router.post("/login", async (req, res) => {
     res.send("Logged in successfully");
 });
 
+//test data 
+router.get("/test", async (req,res) => {
+    const data = {
+        testName: 'name',
+        age: "4"
+    }
+    console.log(data);
+    res.send(data);
+});
+
 module.exports = router;
