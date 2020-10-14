@@ -15,9 +15,9 @@ var port = process.env.PORT || 8000
 app.set("port",port);
 
 //Conntect to db
-// mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopology: true },() => {
-//     console.log("coonected to database!");
-// });
+mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopology: true },() => {
+    console.log("coonected to database!");
+});
 
 //Middleware
 app.use(express.json());
